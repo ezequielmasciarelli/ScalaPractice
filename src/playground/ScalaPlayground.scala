@@ -20,4 +20,11 @@ object ScalaPlayground extends App {
   }
 
   println(fibonacci2(10) == fibonacci(10))
+
+  val nums = Seq(1,2,3) filter isOdd
+
+  println(nums)
+
+  def isOdd(n:Int) = n%2==0
+
 }
