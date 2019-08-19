@@ -53,7 +53,7 @@ object Generics extends App {
   val cage = new Cage(new Dog)
 
   class Car
-  val cage2 = new Cage(new Car)
+  //val cage2 = new Cage(new Car) //ESTO NO ANDA
 
   class Cage2[A >: Animal](animal: A) //Only acepts supertypes of animal
 
