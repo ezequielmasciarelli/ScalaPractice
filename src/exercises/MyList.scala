@@ -34,8 +34,13 @@ class Cons(h:Int,t:MyList) extends MyList {
     if(this.isEmpty) ""
     else s"$h ${t.printElements}"
 }
+object MyList {
+  def apply(seq: Int*): MyList = seq.foldLeft(Empty: MyList){(acc,i) => acc.add(i)}
+}
 
 object List extends App {
-  val list = Empty add 1 add 2 add 4
+  val list = Empty add 1 add 2 add 4 add 4 add 5
+  val list2 = MyList(1,2,3,4,5,6)
   println(list toString)
+  println(list2 toString)
 }
