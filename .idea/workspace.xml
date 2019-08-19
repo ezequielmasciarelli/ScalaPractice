@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b56d29c-7bf2-4fa2-b2ce-79cc2edd5295" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lectures/part2oop/AnonymousClasses.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/MyGenericList.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/MyGenericList.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/AnonymousClasses.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part2oop/AnonymousClasses.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/Generics.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part2oop/Generics.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +18,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lectures/part2oop/AnonymousClasses.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+            <state relative-caret-position="359">
+              <caret line="50" selection-start-line="50" selection-end-line="61" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/exercises/MyGenericList.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2243">
+              <caret line="116" column="25" selection-start-line="116" selection-start-column="25" selection-end-line="116" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lectures/part2oop/Generics.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -62,10 +81,10 @@
         <option value="$PROJECT_DIR$/src/lectures/part2oop/AbstractDataTypes.scala" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.scala" />
         <option value="$PROJECT_DIR$/src/lectures/part2oop/MethodNotations.scala" />
-        <option value="$PROJECT_DIR$/src/lectures/part2oop/Generics.scala" />
         <option value="$PROJECT_DIR$/src/exercises/MyList.scala" />
-        <option value="$PROJECT_DIR$/src/exercises/MyGenericList.scala" />
         <option value="$PROJECT_DIR$/src/lectures/part2oop/AnonymousClasses.scala" />
+        <option value="$PROJECT_DIR$/src/lectures/part2oop/Generics.scala" />
+        <option value="$PROJECT_DIR$/src/exercises/MyGenericList.scala" />
       </list>
     </option>
   </component>
@@ -92,6 +111,12 @@
               <item name="scalanding" type="b2602c69:ProjectViewProjectNode" />
               <item name="scalanding" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scalanding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scalanding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="exercises" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="scalanding" type="b2602c69:ProjectViewProjectNode" />
@@ -144,7 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AnonymousClasses">
+  <component name="RunManager" selected="Application.List2">
     <configuration name="AbstractDataTypes" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part2oop.AbstractDataTypes" />
       <module name="rock-the-jvm-scala-begginers" />
@@ -212,8 +237,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AnonymousClasses" />
         <item itemvalue="Application.List2" />
+        <item itemvalue="Application.AnonymousClasses" />
         <item itemvalue="Application.List" />
         <item itemvalue="Application.Generics" />
         <item itemvalue="Application.AbstractDataTypes" />
@@ -251,12 +276,12 @@
       <workItem from="1566159052003" duration="1925000" />
       <workItem from="1566175330688" duration="2958000" />
       <workItem from="1566244502381" duration="457000" />
-      <workItem from="1566245088051" duration="3280000" />
+      <workItem from="1566245088051" duration="7866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48752000" />
+    <option name="totallyTimeSpent" value="53338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="164" y="1072" width="1616" height="876" extended-state="6" />
@@ -271,7 +296,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32839838" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32839838" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39838493" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -511,20 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/exercises/MyGenericList.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lectures/part2oop/Generics.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lectures/part2oop/MethodNotations.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -534,8 +545,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lectures/part2oop/AnonymousClasses.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+        <state relative-caret-position="359">
+          <caret line="50" selection-start-line="50" selection-end-line="61" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lectures/part2oop/Generics.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/exercises/MyGenericList.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2243">
+          <caret line="116" column="25" selection-start-line="116" selection-start-column="25" selection-end-line="116" selection-end-column="25" />
         </state>
       </provider>
     </entry>

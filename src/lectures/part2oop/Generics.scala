@@ -15,13 +15,14 @@ object Generics extends App {
   }
 
   object MyList {
-    def empty[A]:MyList[A] = ???
+    def empty[A](num:Int):MyList[A] = ???
   }
 
   val listInt = new MyList[Int]
   val listString = new MyList[String]
 
-  val emptyListInt = MyList.empty[Int]
+  val emptyListInt = MyList.empty[Int](1)
+  val emptyListInt2 = MyList.empty(1)
 
   //Variance problem
   class Animal
