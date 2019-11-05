@@ -17,7 +17,7 @@ abstract class MyList {
   override def toString: String = s"[ $printElements ]"
 }
 
-object Empty extends MyList {
+case object Empty extends MyList {
   def head:Int = throw new NoSuchElementException
   def tail:MyList = throw new NoSuchElementException
   def isEmpty:Boolean = true
@@ -25,7 +25,7 @@ object Empty extends MyList {
   def printElements: String = ""
 }
 
-class Cons(h:Int,t:MyList) extends MyList {
+case class Cons(h:Int,t:MyList) extends MyList {
   def head:Int = h
   def tail:MyList = t
   def isEmpty:Boolean = false

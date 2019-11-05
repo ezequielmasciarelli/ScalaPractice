@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/rock-the-jvm-scala-begginers.iml" filepath="$PROJECT_DIR$/rock-the-jvm-scala-begginers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scalanding.iml" filepath="$PROJECT_DIR$/scalanding.iml" />
     </modules>
   </component>
 </project>
