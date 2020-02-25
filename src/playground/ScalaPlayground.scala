@@ -2,7 +2,7 @@ package playground
 
 import scala.annotation.tailrec
 
-object ScalaPlayground extends App {sb
+object ScalaPlayground extends App {
 
   def sum(x:Int,y:Int) = x + y
   val fun = sum _
