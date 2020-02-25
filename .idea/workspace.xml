@@ -4,7 +4,7 @@
     <list default="true" id="8878707b-a9d2-4987-a3ee-e349780ff950" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/exercises/MyGenericList.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/MyGenericList.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playground/ScalaPlayground.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/ScalaPlayground.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part3fp/WhatsAFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part3fp/WhatsAFunction.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -58,13 +59,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="experimental" />
   </component>
-  <component name="RunManager" selected="Application.WhatsAFunction">
-    <configuration name="CaseClasses" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.CaseClasses" />
+  <component name="RunManager" selected="Application.HOFsCurries">
+    <configuration name="AnonymousFunctions" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part3fp.AnonymousFunctions" />
       <module name="scalanding" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lectures.part2oop.*" />
+          <option name="PATTERN" value="lectures.part3fp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exceptions" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.Exceptions" />
+    <configuration name="HOFsCurries" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part3fp.HOFsCurries" />
       <module name="scalanding" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lectures.part2oop.*" />
+          <option name="PATTERN" value="lectures.part3fp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HOFsCurries" />
+        <item itemvalue="Application.AnonymousFunctions" />
         <item itemvalue="Application.WhatsAFunction" />
         <item itemvalue="Scala REPL.Scala REPL" />
         <item itemvalue="Application.ScalaPlayground" />
-        <item itemvalue="Application.Exceptions" />
-        <item itemvalue="Application.CaseClasses" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +167,7 @@
       <workItem from="1575632980357" duration="587000" />
       <workItem from="1578916071092" duration="1575000" />
       <workItem from="1582044783436" duration="608000" />
-      <workItem from="1582653806038" duration="2665000" />
+      <workItem from="1582653806038" duration="5672000" />
     </task>
     <servers />
   </component>
@@ -190,6 +191,10 @@
     <state x="721" y="187" width="468" height="738" key="#com.intellij.ide.util.MemberChooser" timestamp="1582654670972">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
+    <state x="546" y="34" width="818" height="1046" key="#com.intellij.ide.util.MemberChooser.inPresentationMode" timestamp="1582656727503">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="546" y="34" width="818" height="1046" key="#com.intellij.ide.util.MemberChooser.inPresentationMode/0.34.1920.1046@0.34.1920.1046" timestamp="1582656727503" />
     <state x="721" y="187" width="468" height="738" key="#com.intellij.ide.util.MemberChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1582654670972" />
     <state x="519" y="110" width="881" height="891" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1575470752923">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -203,26 +208,42 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="684" y="222" width="530" height="633" key="FileChooserDialogImpl/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575472131838" />
-    <state width="1864" height="261" key="GridCell.Tab.0.bottom" timestamp="1582655096282">
+    <state width="1864" height="259" key="GridCell.Tab.0.bottom" timestamp="1582659570914">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
+    <state width="1864" height="261" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1582657071791">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="261" key="GridCell.Tab.0.bottom.inPresentationMode/0.34.1920.1046@0.34.1920.1046" timestamp="1582657071791" />
     <state width="1864" height="273" key="GridCell.Tab.0.bottom/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575472146531" />
-    <state width="1864" height="261" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1582655096282" />
-    <state width="1864" height="261" key="GridCell.Tab.0.center" timestamp="1582655096279">
+    <state width="1864" height="259" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1582659570914" />
+    <state width="1864" height="259" key="GridCell.Tab.0.center" timestamp="1582659570911">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
+    <state width="1864" height="261" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1582657071790">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="261" key="GridCell.Tab.0.center.inPresentationMode/0.34.1920.1046@0.34.1920.1046" timestamp="1582657071790" />
     <state width="1864" height="273" key="GridCell.Tab.0.center/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575472146530" />
-    <state width="1864" height="261" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1582655096279" />
-    <state width="1864" height="261" key="GridCell.Tab.0.left" timestamp="1582655096276">
+    <state width="1864" height="259" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1582659570910" />
+    <state width="1864" height="259" key="GridCell.Tab.0.left" timestamp="1582659570907">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
+    <state width="1864" height="261" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1582657071789">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="261" key="GridCell.Tab.0.left.inPresentationMode/0.34.1920.1046@0.34.1920.1046" timestamp="1582657071789" />
     <state width="1864" height="273" key="GridCell.Tab.0.left/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575472146530" />
-    <state width="1864" height="261" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1582655096276" />
-    <state width="1864" height="261" key="GridCell.Tab.0.right" timestamp="1582655096280">
+    <state width="1864" height="259" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1582659570907" />
+    <state width="1864" height="259" key="GridCell.Tab.0.right" timestamp="1582659570913">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
+    <state width="1864" height="261" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1582657071790">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state width="1864" height="261" key="GridCell.Tab.0.right.inPresentationMode/0.34.1920.1046@0.34.1920.1046" timestamp="1582657071790" />
     <state width="1864" height="273" key="GridCell.Tab.0.right/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575472146530" />
-    <state width="1864" height="261" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1582655096280" />
+    <state width="1864" height="259" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1582659570913" />
     <state width="1864" height="340" key="GridCell.Tab.1.bottom" timestamp="1575472146525">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

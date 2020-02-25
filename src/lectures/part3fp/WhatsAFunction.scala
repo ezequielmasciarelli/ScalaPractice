@@ -47,10 +47,8 @@ object WhatsAFunction extends App {
   val result = adder3(1)
   println(result)
   println(curryAdder(3)(4))
-}
 
-
-
-trait MyFunction[A,B] {
-  def apply(elem: A): B
+  trait MyFunction[A,B] {
+    def apply(elem: A): B
+  }
 }

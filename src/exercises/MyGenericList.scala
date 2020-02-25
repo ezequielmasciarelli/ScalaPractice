@@ -97,21 +97,15 @@ class ConsGeneric[+A](h:A,t:MyGenericList[A]) extends MyGenericList[A] {
 object List2 extends App {
   val list = EmptyGeneric add 1 add 3  add 4 add 4 add 5
   val list2 = EmptyGeneric add "hello" add "world"
-  println(list toString)
-  println(list2 toString)
+  println(list.toString)
+  println(list2.toString)
 
   //Ejercicio MAP FILTER
-  val evenPredicate = new Function1[Int,Boolean] {
-    override def apply(a: Int): Boolean = a % 2 == 0
-  }
-  val stringToIntTransformer = new Function1[String,Int] {
-    override def apply(a: String): Int = a toInt
-  }
+  val evenPredicate : Int => Boolean = _ % 2 == 0
+  val stringToIntTransformer : String => Int = _.toInt
 
   //Se puede poner o se saca del myTransformer el [Type] list.map[Int](transformer) == list.map(transformer)
-  val listaMultiplicada = list.map(new Function1[Int,Int] {
-    override def apply(a: Int): Int = a * 2
-  })
+  val listaMultiplicada = list.map(_ * 2)
 
   println(listaMultiplicada)
 
@@ -122,8 +116,6 @@ object List2 extends App {
   val listSumadas = list ++ anotherList
   println(listSumadas)
 
-  println(listSumadas.flatMap(new Function1[Int,MyGenericList[Int]] {
-    override def apply(a: Int): MyGenericList[Int] = new ConsGeneric(a,new ConsGeneric(a+1,EmptyGeneric))
-  }))
+  println(listSumadas.flatMap(a => new ConsGeneric(a,new ConsGeneric(a+1,EmptyGeneric))))
 
 }
