@@ -19,6 +19,8 @@ abstract class MyGenericList[+A] {
   def filter(myPredicate: A => Boolean):MyGenericList[A]
   def map[B](myTransformer: A => B):MyGenericList[B]
   def flatMap[B](myTransformer: A => MyGenericList[B]):MyGenericList[B]
+  def foreach(consumer: A => Unit): Unit
+  def sort(compare: (A,A) => Int) : MyGenericList[A]
 
   //Concatenacion de listas
   def ++[B >: A](list:MyGenericList[B]):MyGenericList[B]
@@ -35,8 +37,9 @@ object EmptyGeneric extends MyGenericList[Nothing] {
   override def map[B](myTransformer: Nothing => B): MyGenericList[B] = EmptyGeneric
   override def flatMap[B](myTransformer: Nothing => MyGenericList[B]): MyGenericList[B] = EmptyGeneric
   override def ++[B >: Nothing](list: MyGenericList[B]): MyGenericList[B] = list
-
   //Si llega un elemento de tipo superclase de Nothing, retorno una lista de tipo B (siempre va a retornar una lista de tipo B porque nothing esta abajo de toda la gerarquia)
+  override def foreach(consumer: Nothing => Unit): Unit = ()
+  override def sort(compare: (Nothing, Nothing) => Int): MyGenericList[Nothing] = EmptyGeneric
 }
 
 class ConsGeneric[+A](h:A,t:MyGenericList[A]) extends MyGenericList[A] {
@@ -80,7 +83,14 @@ class ConsGeneric[+A](h:A,t:MyGenericList[A]) extends MyGenericList[A] {
     if(this.isEmpty) ""
     else s"$h ${t.printElements}"
 
+  override def foreach(consumer: A => Unit): Unit = {
+    consumer(h)
+    t.foreach(consumer)
+  }
 
+  override def sort(compare: (A, A) => Int): MyGenericList[A] = {
+    EmptyGeneric
+  }
 }
 
 /*  Como Scala tiene funciones que hacen esto, no hace falta definirlas
@@ -117,5 +127,7 @@ object List2 extends App {
   println(listSumadas)
 
   println(listSumadas.flatMap(a => new ConsGeneric(a,new ConsGeneric(a+1,EmptyGeneric))))
+
+  list.foreach(x => print(x))
 
 }
