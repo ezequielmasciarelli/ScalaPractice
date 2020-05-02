@@ -20,7 +20,9 @@ abstract class MyGenericList[+A] {
   def map[B](myTransformer: A => B):MyGenericList[B]
   def flatMap[B](myTransformer: A => MyGenericList[B]):MyGenericList[B]
   def foreach(consumer: A => Unit): Unit
-  def sort(compare: (A,A) => Int) : MyGenericList[A]
+  def sort(compare: (A,A) => Boolean) : MyGenericList[A]
+  def zipWith[B](list: MyGenericList[B],fun: (A,B) => B) : MyGenericList[B]
+  def fold[B](seed: B)(f: (A,B) => B) : B
 
   //Concatenacion de listas
   def ++[B >: A](list:MyGenericList[B]):MyGenericList[B]
@@ -39,7 +41,11 @@ object EmptyGeneric extends MyGenericList[Nothing] {
   override def ++[B >: Nothing](list: MyGenericList[B]): MyGenericList[B] = list
   //Si llega un elemento de tipo superclase de Nothing, retorno una lista de tipo B (siempre va a retornar una lista de tipo B porque nothing esta abajo de toda la gerarquia)
   override def foreach(consumer: Nothing => Unit): Unit = ()
-  override def sort(compare: (Nothing, Nothing) => Int): MyGenericList[Nothing] = EmptyGeneric
+  override def sort(compare: (Nothing, Nothing) => Boolean): MyGenericList[Nothing] = EmptyGeneric
+
+  override def zipWith[B](list: MyGenericList[B], fun: (Nothing, B) => B): MyGenericList[B] = EmptyGeneric
+
+  override def fold[B](seed: B)(f: (Nothing, B) => B): B = seed
 }
 
 class ConsGeneric[+A](h:A,t:MyGenericList[A]) extends MyGenericList[A] {
@@ -88,8 +94,23 @@ class ConsGeneric[+A](h:A,t:MyGenericList[A]) extends MyGenericList[A] {
     t.foreach(consumer)
   }
 
-  override def sort(compare: (A, A) => Int): MyGenericList[A] = {
-    EmptyGeneric
+  override def sort(compare: (A, A) => Boolean): MyGenericList[A] = {
+    def insert(a: A, sortedTail: MyGenericList[A]): ConsGeneric[A] = {
+      if(sortedTail.isEmpty) new ConsGeneric(a,EmptyGeneric)
+      else if(compare(a, sortedTail.head)) new ConsGeneric(a,sortedTail)
+      else new ConsGeneric(sortedTail.head,insert(a,sortedTail.tail))
+    }
+
+    val sortedTail = t.sort(compare)
+    insert(h,sortedTail)
+  }
+
+  override def zipWith[B](list: MyGenericList[B], fun: (A, B) => B): MyGenericList[B] = {
+    new ConsGeneric[B](fun(head,list.head),tail.zipWith(list.tail,fun))
+  }
+
+  override def fold[B](seed: B)(f: (A, B) => B): B = {
+    tail.fold(f(head,seed))(f)
   }
 }
 
@@ -106,9 +127,11 @@ class ConsGeneric[+A](h:A,t:MyGenericList[A]) extends MyGenericList[A] {
 
 object List2 extends App {
   val list = EmptyGeneric add 1 add 3  add 4 add 4 add 5
+  val list3 = EmptyGeneric add "a" add "b"  add "c" add "d" add "e"
   val list2 = EmptyGeneric add "hello" add "world"
-  println(list.toString)
-  println(list2.toString)
+  //println(list.toString)
+  //println(list2.toString)
+  //list.foreach(println)
 
   //Ejercicio MAP FILTER
   val evenPredicate : Int => Boolean = _ % 2 == 0
@@ -117,17 +140,21 @@ object List2 extends App {
   //Se puede poner o se saca del myTransformer el [Type] list.map[Int](transformer) == list.map(transformer)
   val listaMultiplicada = list.map(_ * 2)
 
-  println(listaMultiplicada)
+  //println(listaMultiplicada)
 
   val listaDePares = list.filter(evenPredicate)
-  println(listaDePares)
+  //println(listaDePares)
 
   val anotherList = new ConsGeneric(1,new ConsGeneric(4,new ConsGeneric(7,EmptyGeneric)))
   val listSumadas = list ++ anotherList
-  println(listSumadas)
+  //println(listSumadas)
 
-  println(listSumadas.flatMap(a => new ConsGeneric(a,new ConsGeneric(a+1,EmptyGeneric))))
+  //println(listSumadas.flatMap(a => new ConsGeneric(a,new ConsGeneric(a+1,EmptyGeneric))))
 
   list.foreach(x => print(x))
-
+  val result = list.zipWith(list3,(a,b:String) => s"$a$b")
+  println(result)
+  val sum = list.fold(0)((a,b) => a + b)
+  println(sum)
+  println(list.sort((x,y) => x > y))
 }

@@ -38,6 +38,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.scala" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -65,7 +68,7 @@
       <recent name="playground" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OddOccurrences">
+  <component name="RunManager" selected="Application.HOFsCurries">
     <configuration name="BinaryGap" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="playground.BinaryGap" />
       <module name="scalanding" />
@@ -79,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Interview3" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="playground.Interview3" />
+    <configuration name="HOFsCurries" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part3fp.HOFsCurries" />
       <module name="scalanding" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="playground.*" />
+          <option name="PATTERN" value="lectures.part3fp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Interview4" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="playground.Interview4" />
+    <configuration name="List2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.List2" />
       <module name="scalanding" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="playground.*" />
+          <option name="PATTERN" value="exercises.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HOFsCurries" />
+        <item itemvalue="Application.List2" />
         <item itemvalue="Application.OddOccurrences" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.BinaryGap" />
-        <item itemvalue="Application.Interview4" />
-        <item itemvalue="Application.Interview3" />
       </list>
     </recent_temporary>
   </component>
@@ -172,6 +175,7 @@
       <workItem from="1587212365422" duration="7316000" />
       <workItem from="1587243106293" duration="4407000" />
       <workItem from="1587381577040" duration="6776000" />
+      <workItem from="1588429304741" duration="2583000" />
     </task>
     <servers />
   </component>
@@ -195,70 +199,70 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="690" y="307" width="530" height="498" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1587073164490" />
-    <state x="721" y="187" width="468" height="738" key="#com.intellij.ide.util.MemberChooser" timestamp="1582668801909">
+    <state x="721" y="187" width="468" height="738" key="#com.intellij.ide.util.MemberChooser" timestamp="1588428651165">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="546" y="34" width="818" height="1046" key="#com.intellij.ide.util.MemberChooser.inPresentationMode" timestamp="1582656727503">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="546" y="34" width="818" height="1046" key="#com.intellij.ide.util.MemberChooser.inPresentationMode/0.34.1920.1046@0.34.1920.1046" timestamp="1582656727503" />
-    <state x="721" y="187" width="468" height="738" key="#com.intellij.ide.util.MemberChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1582668801909" />
-    <state x="788" y="426" key="#xdebugger.evaluate" timestamp="1587383642201">
+    <state x="721" y="187" width="468" height="738" key="#com.intellij.ide.util.MemberChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1588428651165" />
+    <state x="788" y="426" key="#xdebugger.evaluate" timestamp="1588428311003">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state x="788" y="426" key="#xdebugger.evaluate/0.34.1920.1046@0.34.1920.1046" timestamp="1587383642201" />
+    <state x="788" y="426" key="#xdebugger.evaluate/0.34.1920.1046@0.34.1920.1046" timestamp="1588428311003" />
     <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl" timestamp="1587393078853">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="690" y="257" width="530" height="598" key="FileChooserDialogImpl/0.34.1920.1046@0.34.1920.1046" timestamp="1587393078853" />
-    <state width="1864" height="324" key="GridCell.Tab.0.bottom" timestamp="1587393080276">
+    <state width="1864" height="257" key="GridCell.Tab.0.bottom" timestamp="1588433392963">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1582657071791">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.bottom.inPresentationMode/0.34.1920.1046@0.34.1920.1046" timestamp="1582657071791" />
-    <state width="1864" height="324" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1587393080276" />
-    <state width="1864" height="324" key="GridCell.Tab.0.center" timestamp="1587393080275">
+    <state width="1864" height="257" key="GridCell.Tab.0.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1588433392963" />
+    <state width="1864" height="257" key="GridCell.Tab.0.center" timestamp="1588433392957">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1582657071790">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.center.inPresentationMode/0.34.1920.1046@0.34.1920.1046" timestamp="1582657071790" />
-    <state width="1864" height="324" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1587393080275" />
-    <state width="1864" height="324" key="GridCell.Tab.0.left" timestamp="1587393080275">
+    <state width="1864" height="257" key="GridCell.Tab.0.center/0.34.1920.1046@0.34.1920.1046" timestamp="1588433392957" />
+    <state width="1864" height="257" key="GridCell.Tab.0.left" timestamp="1588433392956">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1582657071789">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.left.inPresentationMode/0.34.1920.1046@0.34.1920.1046" timestamp="1582657071789" />
-    <state width="1864" height="324" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1587393080275" />
-    <state width="1864" height="324" key="GridCell.Tab.0.right" timestamp="1587393080275">
+    <state width="1864" height="257" key="GridCell.Tab.0.left/0.34.1920.1046@0.34.1920.1046" timestamp="1588433392956" />
+    <state width="1864" height="257" key="GridCell.Tab.0.right" timestamp="1588433392962">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1582657071790">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state width="1864" height="261" key="GridCell.Tab.0.right.inPresentationMode/0.34.1920.1046@0.34.1920.1046" timestamp="1582657071790" />
-    <state width="1864" height="324" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1587393080275" />
-    <state width="1864" height="324" key="GridCell.Tab.1.bottom" timestamp="1587393080277">
+    <state width="1864" height="257" key="GridCell.Tab.0.right/0.34.1920.1046@0.34.1920.1046" timestamp="1588433392962" />
+    <state width="1864" height="324" key="GridCell.Tab.1.bottom" timestamp="1588429256527">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="324" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1587393080277" />
-    <state width="1864" height="324" key="GridCell.Tab.1.center" timestamp="1587393080276">
+    <state width="1864" height="324" key="GridCell.Tab.1.bottom/0.34.1920.1046@0.34.1920.1046" timestamp="1588429256527" />
+    <state width="1864" height="324" key="GridCell.Tab.1.center" timestamp="1588429256526">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="324" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1587393080276" />
-    <state width="1864" height="324" key="GridCell.Tab.1.left" timestamp="1587393080276">
+    <state width="1864" height="324" key="GridCell.Tab.1.center/0.34.1920.1046@0.34.1920.1046" timestamp="1588429256526" />
+    <state width="1864" height="324" key="GridCell.Tab.1.left" timestamp="1588429256526">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="324" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1587393080276" />
-    <state width="1864" height="324" key="GridCell.Tab.1.right" timestamp="1587393080276">
+    <state width="1864" height="324" key="GridCell.Tab.1.left/0.34.1920.1046@0.34.1920.1046" timestamp="1588429256526" />
+    <state width="1864" height="324" key="GridCell.Tab.1.right" timestamp="1588429256526">
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
-    <state width="1864" height="324" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1587393080276" />
+    <state width="1864" height="324" key="GridCell.Tab.1.right/0.34.1920.1046@0.34.1920.1046" timestamp="1588429256526" />
     <state x="540" y="321" key="com.intellij.ide.util.TipDialog" timestamp="1582721157413">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -268,6 +272,10 @@
       <screen x="0" y="34" width="1920" height="1046" />
     </state>
     <state x="661" y="160" width="588" height="792" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.34.1920.1046@0.34.1920.1046" timestamp="1582655288789" />
+    <state x="640" y="239" width="629" height="634" key="refactoring.ChangeSignatureDialog" timestamp="1588432764197">
+      <screen x="0" y="34" width="1920" height="1046" />
+    </state>
+    <state x="640" y="239" width="629" height="634" key="refactoring.ChangeSignatureDialog/0.34.1920.1046@0.34.1920.1046" timestamp="1588432764197" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -301,6 +309,11 @@
           <url>file://$PROJECT_DIR$/src/playground/OddOccurrences.scala</url>
           <line>20</line>
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/exercises/MyGenericList.scala</url>
+          <line>108</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$APPLICATION_CONFIG_DIR$/scratches/minimumPositive.java</url>

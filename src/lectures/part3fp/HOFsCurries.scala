@@ -48,6 +48,7 @@ object HOFsCurries extends App {
 
   3) zipWith (list, (A,A) => B) MyList[B]
   [1,2,3].zipWith([4,5,6], x*y) => [1*4,2*5,3*6] => [4,8,18]
+
   4) fold(startValue)(function) => a value
   [1,2,3].fold(0)(x+y) => 6
 
@@ -57,6 +58,28 @@ object HOFsCurries extends App {
   8) andThen(f,g) => x => g(f(x))
    */
 
+  def toCurry(f: (Int,Int) => Int) : Int => Int => Int = {
+    a => b => f(a,b)
+  }
 
+  def fromCurry(f: (Int => Int => Int)) : (Int,Int) => Int = {
+    (a,b) => f(a)(b)
+  }
 
+  def andThen[A,B,C](f: A => B,g: B => C ) : A => C = x => g(f(x))
+  def compose[A,B,C](f: B => C, g: A => B) : A => C = x => f(g(x))
+
+  def supperAdder: Int => Int => Int = toCurry(_ + _)
+  def supperAdder4: Int => Int = supperAdder(4)
+  println(supperAdder4(5))
+
+  val simpleAdder = fromCurry(supperAdder)
+  println(simpleAdder(1,2))
+
+  val add2 = (x: Int) => x + 2
+  val mult3 = (x: Int) => x * 3
+  val op1 = compose(add2,mult3)
+  val op2 = andThen(add2,mult3)
+  println(op1(2))
+  println(op2(2))
 }
